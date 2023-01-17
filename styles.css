@@ -323,12 +323,16 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  .my-details1, .my-details2{
+    width: 50; 
+  }
   .details form{
     border: #000 solid 1px;
   }
 
   .form-container {
-    width: 50%;
+    width: 100%;
     margin-left: 10px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -356,8 +360,23 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  .my-details{
-    margin-right: 30%;
+  
+  .contact-section {
+    align-items: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-item i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .contact-item p {
+    font-size: 18px;
   }
   @media (max-width: 767.98px) {
     .timeline::after {

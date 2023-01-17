@@ -100,32 +100,45 @@
       <h2 class="contact-title">Contacts</h2>
       <div class="my-contacts">
         <div class="details">
-          <form class="form-container">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+          <div class="my-details1">
+            <form class="form-container">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            
+              <label for="password">Request:</label>
+              <input type="text" id="password" name="password" required>
+            
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select one</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
           
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          
-            <label for="password">Request:</label>
-            <input type="text" id="password" name="password" required>
-          
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-              <option value="">Select one</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          
-            <input type="submit" value="Submit">
-          </form>
-          
-          <div class="my-details">
+          <div class="my-details2">
             <h3>You can reach me:</h3>
-            <span>
-              <i class="fa fa-envelope"><a href="mailto:kenmutesh901@gmail.com">kenmutesh901@gmail.com</a></i>
-            </span>
+            <section class="contact-section">
+              <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <p>555-555-5555</p>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <p>email@example.com</p>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-map-marker"></i>
+                <p>123 Main St, City, State</p>
+              </div>
+            </section>
           </div>
         </div>
         
