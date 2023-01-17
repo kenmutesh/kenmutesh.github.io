@@ -85,7 +85,7 @@
     margin-bottom: 20px;
 }
 .body h1 span{
-    color: orange;
+    color: #ffa500;
 }
 
 .body p{
@@ -132,9 +132,6 @@
 .images:hover .mypic{
     left: 50%;
 }
-.education{
-    z-index: 1;
-}
 
 .timeline-title{
     text-align: center;
@@ -170,7 +167,7 @@
   }
   
   .container.left {
-    left: 0;
+    left:-5%;
   }
   
   .container.right {
@@ -202,7 +199,7 @@
     top: calc(50% - 1px);
     right: 8px;
     background: #006E51;
-    z-index: 1;
+    z-index: -1;
   }
   
   .container.right::before {
@@ -237,7 +234,7 @@
     height: 40px;
     padding: 9px 0;
     top: calc(50% - 20px);
-    background: #F6D155;
+    background: #ffa500;
     border: 2px solid #006E51;
     border-radius: 40px;
     text-align: center;
@@ -256,7 +253,7 @@
   
   .container .content {
     padding: 30px 90px 30px 30px;
-    background: #F6D155;
+    background: #ffa500;
     position: relative;
     border-radius: 0 500px 500px 0;
   }
@@ -279,7 +276,89 @@
     line-height: 22px;
     color: #000000;
   }
+  .education-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+.my-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.box1{
+    border: #000 solid 1px;
+    width: 48%;
+    height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+    border-top: blue 3px solid;
+  }
+  .box1 .icon{
+    margin-top: 5px;
+    display: flex;
+    color:teal;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation:rescale 1.5s infinite;
+    animation: rescale 1.5s infinite;
+  }
+  .box1 .icon:hover{
+    -webkit-animation:rescale 1.5s;
+    animation: rescale 1.5s;
+  }
+  .contact-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .details form{
+    border: #000 solid 1px;
+  }
+
+  .form-container {
+    width: 50%;
+    margin-left: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
   
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, select {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .my-details{
+    margin-right: 30%;
+  }
   @media (max-width: 767.98px) {
     .timeline::after {
       left: 90px;
@@ -324,3 +403,4 @@
       border-radius: 500px 0 0 500px;
     }
   }
+ 
