@@ -37,28 +37,29 @@
     height: 100vh;
     position: relative;
 }
-.logo{
-    border: #000 1px solid;
-    width:20px;
-    height:20px;
-    -webkit-animation:rescale 1.5s infinite;
-    animation: rescale 1.5s infinite;
-  }
 
 .navbar{
     position: sticky;
     top: 0;
     padding: 20px 0;
     display: flex;
-    width: 84%;
+    width: 100%;
     margin: auto;
-    padding: 20px;
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    background-color: #fff;
+    background-color: rgb(224, 34, 34);
 }
-
+.navbar div{
+  margin-left: 30px;
+}
+.logo{
+  border: #000 1px solid;
+  width:20px;
+  height:20px;
+  -webkit-animation:rescale 1.5s infinite;
+  animation: rescale 1.5s infinite;
+}
 .navbar ul li{
     display: inline-block;
     margin: 10px 20px ;
@@ -74,7 +75,9 @@
 .navbar ul li a:hover{
     color: rgb(255, 0, 0);
 }
-
+.navbar-item{
+  padding-right: 30px;
+}
 .body{
     margin-left: 8%;
     margin-top: 13%;
