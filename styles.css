@@ -40,7 +40,7 @@
 
 .body{
     margin-left: 8%;
-    margin-top: 15%;
+    margin-top: 13%;
 }
 .body h1{
     font-size: 50px;
@@ -67,6 +67,31 @@
     border-radius: 5px;
 }
 
-.body p:hover{
+.body a:hover{
     background-color: transparent;
+    border: solid 1px #000;
+    color: #555;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom is, left 1s ease;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .mypic{
+    left: 45%;
 }
