@@ -38,6 +38,12 @@ ul{
   right: 0;
   opacity: 1;
 }
+.container{
+  max-width: 1100px;
+  width: 100%;
+  background-color: var(--skin-color);
+  margin: auto;
+}
 .sidebar{
   width: 270px;
   background: var(--bg-black-100);
@@ -154,6 +160,11 @@ ul{
 }
 .sidebar .nav li i{
   margin-right: 20px;
+}
+
+/* home content */
+.home .home-img img{
+  height: 400px;
 }
 @-webkit-keyframes rescale{
     0% {transform:rotate(0deg);}
