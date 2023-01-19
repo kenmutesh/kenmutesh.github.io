@@ -2,7 +2,7 @@
 :root{
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
-  --bg-black-50: #f2f2fc;
+  --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
   --bg-black-700: #504e70;
 
@@ -45,6 +45,7 @@ ul{
   left: 0;
   top: 0;
   padding: 30px;
+  border-right: 1px solid var(--bg-black-50);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -89,6 +90,70 @@ ul{
   border-right: 5px solid var(--skin-color);
   top: 0;
   right: 0;
+}
+.sidebar .nav-toggler{
+  height: 40px;
+  width: 45px;
+  border: 1px solid var(--bg-black-50);
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  border-radius: 5px;
+  background: var(--bg-black-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .nav-toggler span{
+  height: 2px;
+  width: 18px;
+  background: var(--skin-color);
+  display: inline-block;
+  position: relative;
+}
+.sidebar .nav-toggler span::before
+{
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: var(--skin-color);
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+.sidebar .nav-toggler span::after
+{
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: var(--skin-color);
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+.sidebar .nav{
+  margin-top: 50px;
+}
+.sidebar .nav li{
+  margin-bottom: 20px;
+  display: block;
+}
+.sidebar .nav li a
+{
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  border-bottom: 1px solid var(--bg-black-50);
+  color: var(--text-black-900);
+  padding: 5px 15px;
+}
+.sidebar .nav li a.active
+{
+  color: var(--skin-color);
+}
+.sidebar .nav li i{
+  margin-right: 20px;
 }
 @-webkit-keyframes rescale{
     0% {transform:rotate(0deg);}
