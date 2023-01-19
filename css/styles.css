@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+:root{
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #f2f2fc;
+  --text-black-900: #302e4d;
+  --bg-black-700: #504e70;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+::before,::after{
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+.section{
+  background: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+.sidebar{
+  width: 270px;
+  background: var(--bg-black-100);
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  z-index: 10;
+
+}
+.sidebar .logo{
+  position: absolute;
+  top: 50px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.sidebar .logo a{
+  color: var(--text-black-900);
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  position: relative;
+}
+.sidebar .logo a span{
+  font-family: 'Clicker Script', cursive;
+  font-family: 40px;
+}
+.sidebar .logo a::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid var(--skin-color);
+  border-left: 5px solid var(--skin-color);
+  bottom: 0;
+  left: 0;
+}
+.sidebar .logo a::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid var(--skin-color);
+  border-right: 5px solid var(--skin-color);
+  top: 0;
+  right: 0;
+}
+@-webkit-keyframes rescale{
+    0% {transform:rotate(0deg);}
+    10% {transform:rotate(36deg);}
+    20% {transform:rotate(72deg);}
+    30% {transform:rotate(108deg);}
+    40% {transform:rotate(144deg);}
+    50% {transform:rotate(180deg);}
+    60% {transform:rotate(216deg);}
+    70% {transform:rotate(252deg);}
+    80% {transform:rotate(288deg);}
+    90% {transform:rotate(334deg);}
+    100% {transform:rotate(360deg);}
+  }
+  
+  @keyframes rescale{
+    0% {transform:rotate(0deg);}
+    10% {transform:rotate(36deg);}
+    20% {transform:rotate(72deg);}
+    30% {transform:rotate(108deg);}
+    40% {transform:rotate(144deg);}
+    50% {transform:rotate(180deg);}
+    60% {transform:rotate(216deg);}
+    70% {transform:rotate(252deg);}
+    80% {transform:rotate(288deg);}
+    90% {transform:rotate(334deg);}
+    100% {transform:rotate(360deg);}
+  }

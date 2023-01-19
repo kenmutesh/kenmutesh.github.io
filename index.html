@@ -5,144 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/skins/skin-colors.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="typewriter">
   <div class="main">
-    <nav class="navbar">
-      <div class="logo">
-
-      </div>
-        <ul class="navbar-item">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#Projects">Education</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#Projects">Contacts</a></li>
-          <li><a href="#Projects">Hire me</a></li>
-        </ul>
-    </nav>
-
-    <div class="body">
-      <h1>I'm Kennedy <span>Mutethia</span></h1>
-      <p>This is my official portfolio website
-        <br>You can get everything about me here
-      </p>
-      <a href="">Request CV</a>
+  <!-- Sidebar start -->
+    <div class="sidebar">
+     <div class="logo">
+      <a href=""><span>K</span>en</a>
+     </div>
+     <ul class="nav">
+      <li><a href="" class="active"><i class="fa fa-home"></i>Home</a></li>
+      <li><a href=""><i class="fa fa-user"></i>About</a></li>
+      <li><a href=""><i class="fa fa-list"></i>Services</a></li>
+      <li><a href=""><i class="fa fa-comments"></i>Contact</a></li>
+     </ul>
     </div>
-    <div class="images" alt="">
-        <img src="images/shape.png" alt="" class="shape">
-        <img src="images/mine.png" alt="" class="mypic">
+    <!-- sidebar end -->
+    <!-- content start -->
+    <div class="main-content">
+      <!-- main start -->
+      <section class="main section">
+        content
+      </section>
+      <!-- main end -->  
     </div>
+    <!-- content end -->
 
    
    
   </div>
-   <div class="education" id="education">
-      <h2 class="timeline-title">My Education</h2>
 
-      <div class="timeline">
-        <div class="container left">
-          <div class="date"></div>
-          <i class="icon fa fa-home"></i>
-          <div class="content">
-            <h2>Sept 2018 - Aug 2022</h2>
-            <h2>University education</h2>
-            <p>
-              Pursued Bsc. Computer science and attained a Second class upper division.
-            </p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="date">22 Oct</div>
-          <i class="icon fa fa-gift"></i>
-          <div class="content">
-            <h2>Jan 2014 - Nov 2017</h2>
-            <h2>Secondary Education</h2>
-            <p>
-              Pursued my secondary education 
-            </p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="date">10 Jul</div>
-          <i class="icon fa fa-user"></i>
-          <div class="content">
-            <h2>Jan 2005 - Nov 2013</h2>
-            <h2>Primary Education</h2>
-            <p>
-              Pursued my primary education
-            </p>
-          </div>
-        </div>
-        
-       
-      </div>
-    </div>
-    <div class="projects">
-      <h2 class="education-title">projects</h2>
-      <div class="my-projects">
-        <div class="box1">
-          <span><i class="icon fa fa-cog fa-2x"></i></span>
-        </div>
-        <div class="box1">
-          <span><i class="icon fa fa-cog fa-2x"></i></span>
-        </div>
-        <div class="box1">
-          <span><i class="icon fa fa-cog fa-2x"></i></span>
-        </div>
-        <div class="box1">
-          <span><i class="icon fa fa-cog fa-2x"></i></span>
-        </div>
-      </div>
-    </div>
-    <div class="contacts">
-      <h2 class="contact-title">Contacts</h2>
-      <div class="my-contacts">
-        <div class="details">
-          <div class="my-details1">
-            <form class="form-container">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-            
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-            
-              <label for="password">Request:</label>
-              <input type="text" id="password" name="password" required>
-            
-              <label for="gender">Gender:</label>
-              <select id="gender" name="gender" required>
-                <option value="">Select one</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-            
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-          
-          <div class="my-details2">
-            <h3>You can reach me:</h3>
-            <section class="contact-section">
-              <div class="contact-item">
-                <i class="fa fa-phone"></i>
-                <p>555-555-5555</p>
-              </div>
-              <div class="contact-item">
-                <i class="fa fa-envelope"></i>
-                <p>email@example.com</p>
-              </div>
-              <div class="contact-item">
-                <i class="fa fa-map-marker"></i>
-                <p>123 Main St, City, State</p>
-              </div>
-            </section>
-          </div>
-        </div>
-        
-      </div>
-    </div>
+    <!-- Use a js file -->
+    <script src="js/main.js"></script>
 </body>
 </html>
