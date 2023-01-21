@@ -55,6 +55,20 @@ ul{
   margin-right: -15px;
   position: relative;
 }
+.btn{
+  font-size: 16px;
+  font-weight: 300;
+  padding: 12px 35px;
+  color: white;
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  background: var(--skin-color);
+  transition: all 0.3s ease;
+}
+.btn:hover{
+  transform: scale(1.05);
+}
 /* sidebar */
 .sidebar{
   width: 270px;
@@ -184,6 +198,26 @@ ul{
   flex: 0 0 60%;
   max-width: 60%;
 }
+h3.hello{
+  font-size: 28px;
+  margin: 0 15px;
+}
+h3.hello span{
+  font-family: 'Clicker Script', cursive;
+  color: var(--skin-color);
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+h3.my-profession
+{
+  font-size: 30px;
+  margin: 15px 0;
+}
+.typing{
+  color: var(--skin-color);
+}
+
 .home .home-img{
   flex: 0 0 40%;
   max-width: 40%;
