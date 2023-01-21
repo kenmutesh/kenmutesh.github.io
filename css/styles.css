@@ -246,6 +246,9 @@ h3.my-profession
 }
 .home .home-img img{
   height: 400px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #302e4d;
 }
 
 @-webkit-keyframes rescale{
