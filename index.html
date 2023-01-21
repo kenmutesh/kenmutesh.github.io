@@ -7,7 +7,15 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/switcher.css">
-  <link rel="stylesheet" href="css/skins/skin-colors7.css">
+  <link rel="stylesheet" href="css/switcher-styles.css">
+  <link rel="stylesheet" href="css/skins/skin-colors1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="css/skins/skin-colors2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="css/skins/skin-colors3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" href="css/skins/skin-colors4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" href="css/skins/skin-colors5.css" class="alternate-style" title="color-5" disabled>
+  <link rel="stylesheet" href="css/skins/skin-colors6.css" class="alternate-style" title="color-6" disabled>
+  <link rel="stylesheet" href="css/skins/skin-colors7.css" class="alternate-style" title="color-7" disabled>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="typewriter">
@@ -62,11 +70,30 @@
     </div>
     <!-- content end -->
 
-   
-   
+   <!-- ===Style switch start=== -->
+<div class="style-switcher">
+  <div class="style-switcher-toggler s-icon">
+    <i class="fas fa-cog fa-spin"></i>
+  </div>
+  <div class="day-night s-icon">
+    <i class="fas fa-moon"></i>
+  </div>
+  <h4>Theme Colors</h4>
+  <div class="colors">
+    <span class="color-1" onclick="setActivity('color-1')"></span>
+    <span class="color-2" onclick="setActivity('color-2')"></span>
+    <span class="color-3" onclick="setActivity('color-3')"></span>
+    <span class="color-4" onclick="setActivity('color-4')"></span>
+    <span class="color-5" onclick="setActivity('color-5')"></span>
+    <span class="color-6" onclick="setActivity('color-6')"></span>
+    <span class="color-7" onclick="setActivity('color-7')"></span>
+  </div>
+</div>
+    <!-- ===Style switch end=== -->
   </div>
 
     <!-- Use a js file -->
     <script src="js/main.js"></script>
+    <script src="js/switch.js"></script>
 </body>
 </html>
