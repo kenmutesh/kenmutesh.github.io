@@ -4,6 +4,17 @@ const typing = new Typed(".typing",{
     loop: true,
     backspeed: 60,
 })
+document.body.classList.add("loading");
+document.body.style.opacity = 0.5;
+
+// Remove the class "loading" and set the opacity back to 1
+document.body.classList.remove("loading");
+document.body.style.opacity = 1;
+
+setTimeout(function(){
+    document.getElementById("loader").classList.add("hide");
+    
+}, 5000);
 
 const active = document.querySelectorAll(".navbar");
 active.forEach(item => {
