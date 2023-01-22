@@ -31,14 +31,7 @@ body{
 ::before,::after{
   box-sizing: border-box;
 }
-.particle {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: var(--bg-black-700);
-  border-radius: 50%;
-  z-index: 1;
-}
+
 ul{
   list-style: none;
 }
@@ -48,6 +41,9 @@ ul{
   display: block;
   padding: 0 30px;
   opacity: 1;
+}
+.section-title{
+  color: var(--text-black-900);
 }
 .main-content{
   padding-left: 270px;
