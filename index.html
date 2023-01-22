@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="typewriter">
+<body class="typewriter" id="body">
   <div class="main">
   <!-- Sidebar start -->
     <div class="sidebar">
@@ -78,7 +78,7 @@
   <div class="day-night s-icon">
     <i class="fas fa-moon"></i>
   </div>
-  <h4>Theme Colors</h4>
+  <h4 class="switcher-title">Theme Colors</h4>
   <div class="colors">
     <span class="color-1" onclick="setActivity('color-1')"></span>
     <span class="color-2" onclick="setActivity('color-2')"></span>
@@ -93,6 +93,7 @@
   </div>
 
     <!-- Use a js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
     <script src="js/switch.js"></script>
 </body>

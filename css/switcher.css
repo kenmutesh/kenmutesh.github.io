@@ -14,6 +14,9 @@
 .style-switcher.open{
     transform: translateX(-25px);
 }
+.switcher-title{
+    color: var(--text-black-900) !important;
+}
 .style-switcher .s-icon{
     position: absolute;
     height: 40px;
