@@ -75,7 +75,7 @@
     transform: rotateY(36deg) translateZ(7rem);
   }
   
-  ...
+  /* ... */
   
   /* Animations */
   @keyframes tiltSpin {
